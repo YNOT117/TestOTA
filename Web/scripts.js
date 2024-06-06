@@ -5,7 +5,7 @@ function ObtenerRedes() {
     xhttp.open("GET", "/Buscar", true);
     xhttp.send();
     //alert("Buscando Redes");
-    // Mostrar imagen de carga
+    //Mostrar imagen de carga
     loading.style.display = "flex";
 
     xhttp.onreadystatechange = function() {
