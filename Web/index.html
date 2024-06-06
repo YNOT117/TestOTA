@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+ 
+   <head>
+      <title>DeterMiau</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="./assets/style.css">
+   </head>
+ 
+   <body>
+
+   <form id="form" action="/ConectarWiFi" method="get">
+
+      <img id="logo" src="./DeterMiauLogo.png">
+
+      <p id="titulo">Redes disponibles</p>
+
+      <select id="selector" name="SSID"></select>
+
+      <input type="text" name="PASS" value="Pass WiFi" class="css-input">
+      </br>
+      <input type="text" name="CORREO" value="Correo" class="css-input">      
+      </br>
+      <input type="text" name="Contra" value="Constraseña" class="css-input">      
+      </br>
+      <input type="text" name="DeterMiauId" value="Nombre Del Dispensador" class="css-input">      
+
+      <div>
+         <button class="myButton" type="button" onclick="ObtenerRedes()">Buscar</button>
+         <button class="myButton" type="submit">Conectar</button>
+      </div>
+      <div id="loading" style="display:none;">
+         <div class="image">
+             <img src="./cargando.gif" alt="Cargando..."> 
+         </div>
+     </div>
+   </form> 
+   
+ 
+   </body>
+
+   <script type="text/javascript" src="./assets/scripts.js"></script>
+
+</html>
